@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo rmmod usbtmc
+make
+sudo insmod usbtmc.ko
+sleep 2
+sudo chmod 777 /dev/usbtmc*
